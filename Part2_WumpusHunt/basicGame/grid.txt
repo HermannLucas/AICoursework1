@@ -1,0 +1,16 @@
+adj(41, 42). adj(42, 43). adj(43, 44).
+adj(31, 32). adj(32, 33). adj(33, 34).
+adj(21, 22). adj(22, 23). adj(23, 24).
+adj(11, 12). adj(12, 13). adj(13, 14).
+
+adj(11, 21). adj(21, 31). adj(31, 41).
+adj(12, 22). adj(22, 32). adj(32, 42).
+adj(13, 23). adj(23, 33). adj(33, 43).
+adj(14, 24). adj(24, 34). adj(34, 44).
+
+totalpits(2).
+totalwumpuses(1).
+
+#show wumpus/1.
+#show pit/1.
+

@@ -1,0 +1,8 @@
+breeze(3).
+breeze(9).
+-breeze(2).
+
+stench(11).
+
+totalpits(2).
+totalwumpuses(1).

@@ -1,0 +1,21 @@
+adj(X,Y) :- adj(Y,X).
+
+{pit(X)} :- breeze(Y), adj(X,Y).
+:- pit(X), -breeze(Y), adj(X,Y).
+:- pit(X), breeze(X).
+:- pit(X), -breeze(X).
+:- pit(X), stench(X).
+:- pit(X), -stench(X).
+
+{wumpus(X)} :- stench(Y), adj(X,Y).
+:- wumpus(X), -stench(Y), adj(X,Y).
+:- wumpus(X), stench(X).
+:- wumpus(X), -stench(X).
+:- wumpus(X), breeze(X).
+:- wumpus(X), -breeze(X).
+
+:- not {pit(X)} = N, totalpits(N).
+:- not {wumpus(X)} = N,totalwumpuses(N).
+
+#show wumpus/1.
+#show pit/1.
