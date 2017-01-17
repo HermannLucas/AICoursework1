@@ -8,9 +8,3 @@ adj(12, 22). adj(22, 32). adj(32, 42).
 adj(13, 23). adj(23, 33). adj(33, 43).
 adj(14, 24). adj(24, 34). adj(34, 44).
 
-totalpits(2).
-totalwumpuses(1).
-
-#show wumpus/1.
-#show pit/1.
-

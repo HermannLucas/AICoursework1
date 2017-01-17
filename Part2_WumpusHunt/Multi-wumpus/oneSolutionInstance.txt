@@ -8,7 +8,10 @@ breeze(32).
 
 stench(33).
 
--wumpus(34).
 
 totalpits(2).
-totalwumpuses(1).
+totalwumpuses(6).
+
+#show wumpus/2.
+#show pit/1.
+
