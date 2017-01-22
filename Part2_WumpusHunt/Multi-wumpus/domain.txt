@@ -13,8 +13,7 @@ adj(X,Y) :- adj(Y,X).
 :- wumpus(X,_), -stench(X).
 :- wumpus(X,_), breeze(X).
 :- wumpus(X,_), -breeze(X).
-{wumpuscell(X)} :- stench(Y), adj(X,Y).
 
-:- not {wumpus(X,W) = W : wumpuscell(X)} = N, totalwumpuses(N).
+:- not #sum{W,X : wumpus(X,W)} = N, totalwumpuses(N).
 :- not {pit(X)} = N, totalpits(N).
 
