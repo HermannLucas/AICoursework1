@@ -82,6 +82,34 @@
 							<color />
 						</graphics>
 					</operator>
+					<operator id="3">
+						<name>activate</name>
+						<description />
+						<timeConstraints timed="false">
+							<duration />
+						</timeConstraints>
+						<parameters>
+							<parameter id="1">
+								<name>location</name>
+								<type>22</type>
+								<defaultValue />
+							</parameter>
+							<parameter id="2">
+								<name>target</name>
+								<type>23</type>
+								<defaultValue />
+							</parameter>
+							<parameter id="3">
+								<name>result</name>
+								<type>24</type>
+								<defaultValue />
+							</parameter>
+						</parameters>
+						<constraints />
+						<graphics>
+							<color />
+						</graphics>
+					</operator>
 				</operators>
 				<generalization element="class" id="">
 					<name />
@@ -284,11 +312,11 @@
 					<lineStyle />
 				</graphics>
 			</classAssociation>
-			<classAssociation id="3">
-				<name>exit</name>
+			<classAssociation id="5">
+				<name>linked</name>
 				<description />
 				<associationEnds>
-					<associationEnd navigation="false" element="class" element-id="22" id="1">
+					<associationEnd navigation="false" element="class" element-id="23" id="1">
 						<type>none</type>
 						<rolename>
 							<value />
@@ -303,7 +331,7 @@
 							<value />
 						</rolename>
 						<multiplicity>
-							<value>1</value>
+							<value>0..*</value>
 						</multiplicity>
 					</associationEnd>
 				</associationEnds>
@@ -317,7 +345,7 @@
 					<lineStyle />
 				</graphics>
 			</classAssociation>
-			<classAssociation id="4">
+			<classAssociation id="6">
 				<name>leadto</name>
 				<description />
 				<associationEnds>
@@ -327,7 +355,7 @@
 							<value />
 						</rolename>
 						<multiplicity>
-							<value>1</value>
+							<value />
 						</multiplicity>
 					</associationEnd>
 					<associationEnd navigation="true" element="class" element-id="22" id="2">
@@ -336,7 +364,7 @@
 							<value />
 						</rolename>
 						<multiplicity>
-							<value>1</value>
+							<value />
 						</multiplicity>
 					</associationEnd>
 				</associationEnds>
@@ -350,11 +378,11 @@
 					<lineStyle />
 				</graphics>
 			</classAssociation>
-			<classAssociation id="5">
-				<name>linked</name>
+			<classAssociation id="7">
+				<name>exit</name>
 				<description />
 				<associationEnds>
-					<associationEnd navigation="false" element="class" element-id="23" id="1">
+					<associationEnd navigation="false" element="class" element-id="22" id="1">
 						<type>none</type>
 						<rolename>
 							<value />
@@ -412,7 +440,7 @@
 					<class id="22">
 						<graphics>
 							<icon />
-							<position x="324" y="243" />
+							<position x="360" y="259" />
 							<size width="100" height="70" />
 							<color />
 						</graphics>
@@ -428,7 +456,7 @@
 					<class id="24">
 						<graphics>
 							<icon />
-							<position x="123" y="243" />
+							<position x="98" y="259" />
 							<size width="100" height="70" />
 							<color />
 						</graphics>
@@ -489,61 +517,61 @@
 							<lineStyle />
 						</graphics>
 					</classAssociation>
-					<classAssociation id="3">
-						<graphics>
-							<labels>
-								<label type="main" identifier="">
-									<position x="500" y="-15" />
-								</label>
-								<label type="rolename" identifier="1">
-									<position x="100" y="15" />
-								</label>
-								<label type="rolename" identifier="2">
-									<position x="900" y="15" />
-								</label>
-								<label type="multiplicity" identifier="1">
-									<position x="100" y="-15" />
-								</label>
-								<label type="multiplicity" identifier="2">
-									<position x="900" y="-15" />
-								</label>
-								<label type="changeability" identifier="">
-									<position x="500" y="15" />
-								</label>
-							</labels>
-							<points />
-							<color />
-							<lineStyle />
-						</graphics>
-					</classAssociation>
-					<classAssociation id="4">
-						<graphics>
-							<labels>
-								<label type="main" identifier="">
-									<position x="500" y="-15" />
-								</label>
-								<label type="rolename" identifier="1">
-									<position x="100" y="15" />
-								</label>
-								<label type="rolename" identifier="2">
-									<position x="900" y="15" />
-								</label>
-								<label type="multiplicity" identifier="1">
-									<position x="100" y="-15" />
-								</label>
-								<label type="multiplicity" identifier="2">
-									<position x="900" y="-15" />
-								</label>
-								<label type="changeability" identifier="">
-									<position x="500" y="15" />
-								</label>
-							</labels>
-							<points />
-							<color />
-							<lineStyle />
-						</graphics>
-					</classAssociation>
 					<classAssociation id="5">
+						<graphics>
+							<labels>
+								<label type="main" identifier="">
+									<position x="500" y="-15" />
+								</label>
+								<label type="rolename" identifier="1">
+									<position x="100" y="15" />
+								</label>
+								<label type="rolename" identifier="2">
+									<position x="900" y="15" />
+								</label>
+								<label type="multiplicity" identifier="1">
+									<position x="100" y="-15" />
+								</label>
+								<label type="multiplicity" identifier="2">
+									<position x="900" y="-15" />
+								</label>
+								<label type="changeability" identifier="">
+									<position x="500" y="15" />
+								</label>
+							</labels>
+							<points />
+							<color />
+							<lineStyle />
+						</graphics>
+					</classAssociation>
+					<classAssociation id="6">
+						<graphics>
+							<labels>
+								<label type="main" identifier="">
+									<position x="500" y="-15" />
+								</label>
+								<label type="rolename" identifier="1">
+									<position x="100" y="15" />
+								</label>
+								<label type="rolename" identifier="2">
+									<position x="900" y="15" />
+								</label>
+								<label type="multiplicity" identifier="1">
+									<position x="100" y="-15" />
+								</label>
+								<label type="multiplicity" identifier="2">
+									<position x="900" y="-15" />
+								</label>
+								<label type="changeability" identifier="">
+									<position x="500" y="15" />
+								</label>
+							</labels>
+							<points />
+							<color />
+							<lineStyle />
+						</graphics>
+					</classAssociation>
+					<classAssociation id="7">
 						<graphics>
 							<labels>
 								<label type="main" identifier="">
@@ -611,8 +639,8 @@
 								</label>
 							</labels>
 							<points>
-								<point x="346" y="207" />
-								<point x="396" y="207" />
+								<point x="240" y="339" />
+								<point x="290" y="339" />
 							</points>
 							<color />
 							<lineStyle />
@@ -638,6 +666,31 @@
 							<points>
 								<point x="345" y="422" />
 								<point x="395" y="422" />
+							</points>
+							<color />
+							<lineStyle />
+						</graphics>
+					</action>
+					<action id="3">
+						<reference class="21" operator="3" />
+						<name />
+						<description />
+						<precondition>self.in = location and location.has-&gt;includes(target) and target.linked-&gt;includes(result)</precondition>
+						<postcondition>if result.locked = true then result.locked = false endif and if result.locked = false then result.locked = true endif</postcondition>
+						<annotatedoclexpressions />
+						<associationEnds>
+							<actionEnd navigation="false" element="state" element-id="1" id="1" />
+							<actionEnd navigation="true" element="state" element-id="1" id="2" />
+						</associationEnds>
+						<graphics>
+							<labels>
+								<label type="main" identifier="">
+									<position x="500" y="-15" />
+								</label>
+							</labels>
+							<points>
+								<point x="348" y="228" />
+								<point x="398" y="228" />
 							</points>
 							<color />
 							<lineStyle />
@@ -710,6 +763,259 @@
 								<color />
 							</graphics>
 						</object>
+						<object id="6">
+							<name>Room3</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="7">
+							<name>Room4</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="8">
+							<name>Room5</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="9">
+							<name>Room6</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="10">
+							<name>Room7</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="11">
+							<name>Room8</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="12">
+							<name>Room9</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="13">
+							<name>Room10</name>
+							<class>22</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="14">
+							<name>Path2</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="15">
+							<name>Path3</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="16">
+							<name>Path4</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="17">
+							<name>Path5</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="18">
+							<name>Path6</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="19">
+							<name>Path7</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="20">
+							<name>Path8</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="21">
+							<name>Path9</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="22">
+							<name>Path10</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="23">
+							<name>Path11</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="24">
+							<name>Path12</name>
+							<class>24</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="25">
+							<name>Item2</name>
+							<class>23</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="26">
+							<name>Item3</name>
+							<class>23</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="27">
+							<name>Item4</name>
+							<class>23</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
+						<object id="28">
+							<name>Item5</name>
+							<class>23</class>
+							<description />
+							<graphics>
+								<icon />
+								<position x="" y="" />
+								<size width="" height="" />
+								<color />
+							</graphics>
+						</object>
 					</objects>
 				</elements>
 				<repositoryDiagrams>
@@ -730,7 +1036,7 @@
 								<attributes />
 								<graphics>
 									<icon />
-									<position x="182" y="273" />
+									<position x="117" y="319" />
 									<size width="100" height="50" />
 									<color />
 								</graphics>
@@ -739,7 +1045,7 @@
 								<attributes />
 								<graphics>
 									<icon />
-									<position x="318" y="296" />
+									<position x="250" y="321" />
 									<size width="100" height="50" />
 									<color />
 								</graphics>
@@ -776,6 +1082,318 @@
 									<color />
 								</graphics>
 							</object>
+							<object id="6">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="362" y="317" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="7">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="372" y="327" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="8">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="382" y="337" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="9">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="392" y="347" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="10">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="402" y="357" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="11">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="412" y="367" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="12">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="417" y="379" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="13">
+								<attributes />
+								<graphics>
+									<icon />
+									<position x="427" y="389" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="14">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="596" y="255" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="15">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="606" y="265" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="16">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="616" y="275" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="17">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="626" y="285" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="18">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="636" y="295" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="19">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="646" y="305" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="20">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="656" y="315" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="21">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="666" y="325" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="22">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="676" y="335" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="23">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="686" y="345" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="24">
+								<attributes>
+									<attribute class="24" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="696" y="355" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="25">
+								<attributes>
+									<attribute class="23" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="560" y="68" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="26">
+								<attributes>
+									<attribute class="23" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="570" y="78" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="27">
+								<attributes>
+									<attribute class="23" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="580" y="88" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
+							<object id="28">
+								<attributes>
+									<attribute class="23" id="1">
+										<value />
+										<graphics>
+											<color />
+										</graphics>
+									</attribute>
+								</attributes>
+								<graphics>
+									<icon />
+									<position x="590" y="98" />
+									<size width="120" height="80" />
+									<color />
+								</graphics>
+							</object>
 						</objects>
 						<associations />
 						<constraints />
@@ -783,7 +1401,7 @@
 				</repositoryDiagrams>
 				<planningProblems>
 					<problem id="1">
-						<name>Planning Problem</name>
+						<name>NoSoltuion</name>
 						<description />
 						<objectDiagrams>
 							<objectDiagram id="1">
@@ -795,7 +1413,7 @@
 										<attributes />
 										<graphics>
 											<icon />
-											<position x="119" y="52" />
+											<position x="19" y="120" />
 											<size width="100" height="50" />
 											<color />
 										</graphics>
@@ -804,7 +1422,7 @@
 										<attributes />
 										<graphics>
 											<icon />
-											<position x="448" y="217" />
+											<position x="442" y="150" />
 											<size width="100" height="50" />
 											<color />
 										</graphics>
@@ -821,7 +1439,7 @@
 									<object id="4">
 										<attributes>
 											<attribute class="24" id="1">
-												<value>false</value>
+												<value>true</value>
 												<graphics>
 													<color />
 												</graphics>
@@ -829,7 +1447,7 @@
 										</attributes>
 										<graphics>
 											<icon />
-											<position x="274" y="209" />
+											<position x="276" y="157" />
 											<size width="100" height="50" />
 											<color />
 										</graphics>
@@ -845,19 +1463,192 @@
 										</attributes>
 										<graphics>
 											<icon />
-											<position x="425" y="94" />
+											<position x="278" y="44" />
 											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="6">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="696" y="14" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="14">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="452" y="24" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="25">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="365" y="393" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="7">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="72" y="392" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="8">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="545" y="349" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="15">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="275" y="275" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="16">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="739" y="254" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="17">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="488" y="224" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="26">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="622" y="125" />
+											<size width="120" height="80" />
 											<color />
 										</graphics>
 									</object>
 								</objects>
 								<associations>
-									<objectAssociation id="1">
-										<classAssociation>3</classAssociation>
+									<objectAssociation id="4">
+										<classAssociation>1</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="1" id="1" />
+											<objectAssociationEnd element="object" element-id="2" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="5">
+										<classAssociation>2</classAssociation>
 										<description />
 										<associationEnds>
 											<objectAssociationEnd element="object" element-id="2" id="1" />
+											<objectAssociationEnd element="object" element-id="5" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="167" y="74" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="6">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
 											<objectAssociationEnd element="object" element-id="4" id="2" />
+											<objectAssociationEnd element="object" element-id="5" id="1" />
 										</associationEnds>
 										<graphics>
 											<labels>
@@ -876,8 +1667,132 @@
 											<lineStyle />
 										</graphics>
 									</objectAssociation>
-									<objectAssociation id="2">
-										<classAssociation>4</classAssociation>
+									<objectAssociation id="9">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="5" id="1" />
+											<objectAssociationEnd element="object" element-id="14" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="17">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+											<objectAssociationEnd element="object" element-id="25" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="22">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="25" id="1" />
+											<objectAssociationEnd element="object" element-id="16" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="784" y="464" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="23">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="26" id="2" />
+											<objectAssociationEnd element="object" element-id="6" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="24">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="26" id="1" />
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="359" y="22" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="678" y="320" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="25">
+										<classAssociation>6</classAssociation>
 										<description />
 										<associationEnds>
 											<objectAssociationEnd element="object" element-id="4" id="1" />
@@ -900,12 +1815,12 @@
 											<lineStyle />
 										</graphics>
 									</objectAssociation>
-									<objectAssociation id="3">
-										<classAssociation>2</classAssociation>
+									<objectAssociation id="26">
+										<classAssociation>6</classAssociation>
 										<description />
 										<associationEnds>
-											<objectAssociationEnd element="object" element-id="3" id="1" />
-											<objectAssociationEnd element="object" element-id="5" id="2" />
+											<objectAssociationEnd element="object" element-id="14" id="1" />
+											<objectAssociationEnd element="object" element-id="6" id="2" />
 										</associationEnds>
 										<graphics>
 											<labels>
@@ -924,12 +1839,12 @@
 											<lineStyle />
 										</graphics>
 									</objectAssociation>
-									<objectAssociation id="4">
-										<classAssociation>1</classAssociation>
+									<objectAssociation id="27">
+										<classAssociation>6</classAssociation>
 										<description />
 										<associationEnds>
-											<objectAssociationEnd element="object" element-id="1" id="1" />
-											<objectAssociationEnd element="object" element-id="2" id="2" />
+											<objectAssociationEnd element="object" element-id="16" id="1" />
+											<objectAssociationEnd element="object" element-id="8" id="2" />
 										</associationEnds>
 										<graphics>
 											<labels>
@@ -944,6 +1859,232 @@
 												</label>
 											</labels>
 											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="28">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="17" id="1" />
+											<objectAssociationEnd element="object" element-id="3" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="0" y="25" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="29">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="1" />
+											<objectAssociationEnd element="object" element-id="2" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="430" y="7" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="208" y="300" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="30">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="1" />
+											<objectAssociationEnd element="object" element-id="7" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="540" y="7" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="286" y="395" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="31">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="4" id="2" />
+											<objectAssociationEnd element="object" element-id="2" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="209" y="178" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="32">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="14" id="2" />
+											<objectAssociationEnd element="object" element-id="3" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="33">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="16" id="2" />
+											<objectAssociationEnd element="object" element-id="6" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="34">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="17" id="2" />
+											<objectAssociationEnd element="object" element-id="8" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="35">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="469" y="14" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="156" y="328" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="36">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+											<objectAssociationEnd element="object" element-id="2" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="425" y="13" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="292" y="243" />
+											</points>
 											<color />
 											<lineStyle />
 										</graphics>
@@ -956,6 +2097,2060 @@
 								<sequenceReference>goal</sequenceReference>
 								<description />
 								<objects>
+									<object id="5">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="425" y="94" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="25">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="560" y="68" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="26">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="584" y="179" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+								</objects>
+								<associations />
+								<constraints />
+							</objectDiagram>
+						</objectDiagrams>
+						<constraints />
+						<metrics />
+					</problem>
+					<problem id="2">
+						<name>Problem2</name>
+						<description />
+						<objectDiagrams>
+							<objectDiagram id="1">
+								<name>Snapshot</name>
+								<sequenceReference>init</sequenceReference>
+								<description />
+								<objects>
+									<object id="1">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="7" y="77" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="2">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="7" y="173" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="3">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="291" y="172" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="4">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="147" y="172" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="5">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="6" y="266" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="6">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="392" y="2" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="7">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="596" y="155" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="8">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="640" y="402" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="9">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="744" y="5" />
+											<size width="109" height="52" />
+											<color />
+										</graphics>
+									</object>
+									<object id="10">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="406" y="397" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="14">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="431" y="156" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="15">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="472" y="276" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="16">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="722" y="269" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="17">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="534" y="57" />
+											<size width="93" height="60" />
+											<color />
+										</graphics>
+									</object>
+									<object id="18">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="697" y="81" />
+											<size width="81" height="44" />
+											<color />
+										</graphics>
+									</object>
+									<object id="25">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="195" y="352" />
+											<size width="76" height="48" />
+											<color />
+										</graphics>
+									</object>
+									<object id="26">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="609" y="4" />
+											<size width="67" height="44" />
+											<color />
+										</graphics>
+									</object>
+									<object id="27">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="782" y="124" />
+											<size width="67" height="48" />
+											<color />
+										</graphics>
+									</object>
+									<object id="28">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="548" y="451" />
+											<size width="68" height="34" />
+											<color />
+										</graphics>
+									</object>
+								</objects>
+								<associations>
+									<objectAssociation id="1">
+										<classAssociation>1</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="1" id="1" />
+											<objectAssociationEnd element="object" element-id="2" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="2">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="2" id="1" />
+											<objectAssociationEnd element="object" element-id="5" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="3">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="4" id="2" />
+											<objectAssociationEnd element="object" element-id="2" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="4">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="4" id="1" />
+											<objectAssociationEnd element="object" element-id="3" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="5">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="14" id="1" />
+											<objectAssociationEnd element="object" element-id="7" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="6">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="14" id="2" />
+											<objectAssociationEnd element="object" element-id="3" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="7">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="24" y="-28" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="566" y="222" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="8">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="7" id="2" />
+											<objectAssociationEnd element="object" element-id="15" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="779" y="12" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="652" y="318" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="9">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="10" id="1" />
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="811" y="17" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="577" y="430" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="10">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="1" />
+											<objectAssociationEnd element="object" element-id="10" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="192" y="-21" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="420" y="325" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="11">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="7" id="2" />
+											<objectAssociationEnd element="object" element-id="16" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="200" y="18" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="770" y="198" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="12">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="16" id="2" />
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="679" y="298" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="13">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="16" id="1" />
+											<objectAssociationEnd element="object" element-id="8" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="836" y="20" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="813" y="457" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="14">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="8" id="1" />
+											<objectAssociationEnd element="object" element-id="16" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="181" y="-17" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="679" y="319" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="15">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="17" id="2" />
+											<objectAssociationEnd element="object" element-id="6" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="539" y="-12" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="446" y="108" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="16">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="6" id="2" />
+											<objectAssociationEnd element="object" element-id="17" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="336" y="18" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="572" y="25" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="17">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="17" id="1" />
+											<objectAssociationEnd element="object" element-id="7" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="261" y="-26" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="560" y="165" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="18">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+											<objectAssociationEnd element="object" element-id="17" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="152" y="-8" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="654" y="99" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="19">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="9" id="2" />
+											<objectAssociationEnd element="object" element-id="18" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="1000" y="20" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="803" y="90" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="20">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="18" id="2" />
+											<objectAssociationEnd element="object" element-id="9" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="168" y="-16" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="707" y="32" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="21">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+											<objectAssociationEnd element="object" element-id="18" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="210" y="8" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="668" y="99" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="22">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="7" id="2" />
+											<objectAssociationEnd element="object" element-id="18" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="223" y="-12" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="769" y="175" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="23">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="5" id="1" />
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="272" y="304" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="24">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="25" id="1" />
+											<objectAssociationEnd element="object" element-id="17" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="233" y="143" />
+												<point x="476" y="143" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="25">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="10" id="1" />
+											<objectAssociationEnd element="object" element-id="25" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="239" y="447" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="26">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="26" id="2" />
+											<objectAssociationEnd element="object" element-id="6" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="278" y="-12" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="579" y="10" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="27">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="26" id="1" />
+											<objectAssociationEnd element="object" element-id="18" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="640" y="-12" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="638" y="74" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="28">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="27" id="2" />
+											<objectAssociationEnd element="object" element-id="9" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="832" y="92" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="29">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="27" id="1" />
+											<objectAssociationEnd element="object" element-id="16" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="515" y="-23" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="800" y="218" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="30">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="28" id="2" />
+											<objectAssociationEnd element="object" element-id="8" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="323" y="12" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="607" y="416" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+								</associations>
+								<constraints />
+							</objectDiagram>
+							<objectDiagram id="2">
+								<name>Snapshot</name>
+								<sequenceReference>goal</sequenceReference>
+								<description />
+								<objects>
+									<object id="25">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="560" y="68" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="27">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="162" y="157" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="28">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="573" y="232" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="26">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="445" y="169" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="5">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="425" y="94" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+								</objects>
+								<associations />
+								<constraints />
+							</objectDiagram>
+						</objectDiagrams>
+						<constraints />
+						<metrics />
+					</problem>
+					<problem id="3">
+						<name>Problem3</name>
+						<description />
+						<objectDiagrams>
+							<objectDiagram id="1">
+								<name>Snapshot</name>
+								<sequenceReference>init</sequenceReference>
+								<description />
+								<objects>
+									<object id="1">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="0" y="0" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="2">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="0" y="98" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="3">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="0" y="269" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="6">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="216" y="102" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="7">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="631" y="102" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="5">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="161" y="14" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="8">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="223" y="356" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="9">
+										<attributes />
+										<graphics>
+											<icon />
+											<position x="631" y="346" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="4">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="0" y="185" />
+											<size width="100" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="14">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="138" y="276" />
+											<size width="76" height="35" />
+											<color />
+										</graphics>
+									</object>
+									<object id="15">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="436" y="116" />
+											<size width="89" height="50" />
+											<color />
+										</graphics>
+									</object>
+									<object id="16">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="640" y="237" />
+											<size width="103" height="51" />
+											<color />
+										</graphics>
+									</object>
+									<object id="17">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="435" y="225" />
+											<size width="85" height="48" />
+											<color />
+										</graphics>
+									</object>
+									<object id="18">
+										<attributes>
+											<attribute class="24" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="294" y="274" />
+											<size width="76" height="47" />
+											<color />
+										</graphics>
+									</object>
+									<object id="25">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="778" y="123" />
+											<size width="78" height="38" />
+											<color />
+										</graphics>
+									</object>
+									<object id="26">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="544" y="289" />
+											<size width="65" height="39" />
+											<color />
+										</graphics>
+									</object>
+									<object id="27">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="106" y="387" />
+											<size width="71" height="40" />
+											<color />
+										</graphics>
+									</object>
+									<object id="28">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>false</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="398" y="400" />
+											<size width="77" height="42" />
+											<color />
+										</graphics>
+									</object>
+								</objects>
+								<associations>
+									<objectAssociation id="1">
+										<classAssociation>1</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="1" id="1" />
+											<objectAssociationEnd element="object" element-id="2" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="2">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="2" id="1" />
+											<objectAssociationEnd element="object" element-id="5" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="179" y="106" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="3">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="4" id="2" />
+											<objectAssociationEnd element="object" element-id="2" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="594" y="-22" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="4">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="4" id="1" />
+											<objectAssociationEnd element="object" element-id="3" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-29" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="5">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="14" id="2" />
+											<objectAssociationEnd element="object" element-id="3" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="6">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="14" id="1" />
+											<objectAssociationEnd element="object" element-id="6" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="838" y="18" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="165" y="153" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="7">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+											<objectAssociationEnd element="object" element-id="6" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="8">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="15" id="1" />
+											<objectAssociationEnd element="object" element-id="7" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="9">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="16" id="2" />
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="537" y="-28" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="10">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="16" id="1" />
+											<objectAssociationEnd element="object" element-id="9" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="637" y="-27" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="11">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="6" id="2" />
+											<objectAssociationEnd element="object" element-id="17" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="471" y="-12" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="308" y="248" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="12">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="17" id="2" />
+											<objectAssociationEnd element="object" element-id="9" id="1" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="477" y="11" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="479" y="383" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="13">
+										<classAssociation>7</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="6" id="1" />
+											<objectAssociationEnd element="object" element-id="18" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="159" y="14" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="251" y="289" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="14">
+										<classAssociation>6</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="18" id="1" />
+											<objectAssociationEnd element="object" element-id="8" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="688" y="-22" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="253" y="304" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="15">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="5" id="1" />
+											<objectAssociationEnd element="object" element-id="15" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="459" y="34" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="16">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="7" id="1" />
+											<objectAssociationEnd element="object" element-id="25" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="17">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="25" id="1" />
+											<objectAssociationEnd element="object" element-id="16" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="666" y="8" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="831" y="253" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="18">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="9" id="1" />
+											<objectAssociationEnd element="object" element-id="26" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="753" y="-13" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="645" y="309" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="19">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="26" id="1" />
+											<objectAssociationEnd element="object" element-id="17" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="718" y="-14" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="572" y="245" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="20">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="8" id="1" />
+											<objectAssociationEnd element="object" element-id="27" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="" y="" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="" y="" />
+												</label>
+											</labels>
+											<points />
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="21">
+										<classAssociation>2</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="9" id="1" />
+											<objectAssociationEnd element="object" element-id="28" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="500" y="-15" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="545" y="408" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+									<objectAssociation id="22">
+										<classAssociation>5</classAssociation>
+										<description />
+										<associationEnds>
+											<objectAssociationEnd element="object" element-id="28" id="1" />
+											<objectAssociationEnd element="object" element-id="18" id="2" />
+										</associationEnds>
+										<graphics>
+											<labels>
+												<label type="main" identifier="">
+													<position x="800" y="-18" />
+												</label>
+												<label type="rolename" identifier="1">
+													<position x="100" y="15" />
+												</label>
+												<label type="rolename" identifier="2">
+													<position x="900" y="15" />
+												</label>
+											</labels>
+											<points>
+												<point x="439" y="294" />
+											</points>
+											<color />
+											<lineStyle />
+										</graphics>
+									</objectAssociation>
+								</associations>
+								<constraints />
+							</objectDiagram>
+							<objectDiagram id="2">
+								<name>Snapshot</name>
+								<sequenceReference>goal</sequenceReference>
+								<description />
+								<objects>
+									<object id="25">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="560" y="68" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="27">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="151" y="211" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="26">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="676" y="229" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
+									<object id="28">
+										<attributes>
+											<attribute class="23" id="1">
+												<value>true</value>
+												<graphics>
+													<color />
+												</graphics>
+											</attribute>
+										</attributes>
+										<graphics>
+											<icon />
+											<position x="496" y="221" />
+											<size width="120" height="80" />
+											<color />
+										</graphics>
+									</object>
 									<object id="5">
 										<attributes>
 											<attribute class="23" id="1">
