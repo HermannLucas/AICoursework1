@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project>
 	<name>Advanced Domain</name>
-	<description />
+	<description>Basic domain for the coursework1. Covers part 3.1.2 of the coursework.</description>
 	<generalInformation>
 		<tool>itSIMPLE</tool>
 		<version>4.0.00</version>
