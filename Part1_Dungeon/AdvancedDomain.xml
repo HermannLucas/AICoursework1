@@ -2036,16 +2036,16 @@
 										</graphics>
 									</objectAssociation>
 									<objectAssociation id="48">
-										<classAssociation>6</classAssociation>
+										<classAssociation>7</classAssociation>
 										<description />
 										<associationEnds>
-											<objectAssociationEnd element="object" element-id="6" id="2" />
-											<objectAssociationEnd element="object" element-id="17" id="1" />
+											<objectAssociationEnd element="object" element-id="17" id="2" />
+											<objectAssociationEnd element="object" element-id="6" id="1" />
 										</associationEnds>
 										<graphics>
 											<labels>
 												<label type="main" identifier="">
-													<position x="" y="" />
+													<position x="500" y="-15" />
 												</label>
 												<label type="rolename" identifier="1">
 													<position x="" y="" />
@@ -2156,11 +2156,11 @@
 										</graphics>
 									</objectAssociation>
 									<objectAssociation id="53">
-										<classAssociation>7</classAssociation>
+										<classAssociation>6</classAssociation>
 										<description />
 										<associationEnds>
-											<objectAssociationEnd element="object" element-id="9" id="1" />
-											<objectAssociationEnd element="object" element-id="17" id="2" />
+											<objectAssociationEnd element="object" element-id="17" id="1" />
+											<objectAssociationEnd element="object" element-id="9" id="2" />
 										</associationEnds>
 										<graphics>
 											<labels>
