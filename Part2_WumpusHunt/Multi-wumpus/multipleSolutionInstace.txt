@@ -1,0 +1,16 @@
+breeze(22).
+breeze(32).
+-breeze(43).
+-breeze(13).
+
+-pit(12).
+
+stench(33).
+
+
+totalpits(2).
+totalwumpuses(6).
+
+#show wumpus/2.
+#show pit/1.
+

@@ -1,9 +1,7 @@
 breeze(32).
--breeze(11).
 -breeze(41).
--breeze(33).
 
--pit(44).
+-pit(33).
 
 stench(13).
 stench(24).

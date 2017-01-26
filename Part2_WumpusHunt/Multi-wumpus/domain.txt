@@ -6,6 +6,7 @@ adj(X,Y) :- adj(Y,X).
 :- pit(X), -breeze(X).
 :- pit(X), stench(X).
 :- pit(X), -stench(X).
+:- pit(X), -wumpus(X).
 
 {wumpus(X,1..N)} < 2 :- stench(Y), adj(X,Y), totalwumpuses(N).
 :- wumpus(X,_), -stench(Y), adj(X,Y).
@@ -13,6 +14,7 @@ adj(X,Y) :- adj(Y,X).
 :- wumpus(X,_), -stench(X).
 :- wumpus(X,_), breeze(X).
 :- wumpus(X,_), -breeze(X).
+:- wumpus(X), -pit(X).
 
 :- not #sum{W,X : wumpus(X,W)} = N, totalwumpuses(N).
 :- not {pit(X)} = N, totalpits(N).
